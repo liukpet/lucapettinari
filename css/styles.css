@@ -1,0 +1,58 @@
+.cdots{
+  color: #99a8b2;
+  width: 10%;
+  margin: 20vh auto;
+  border-style: dotted none none;
+  border-width: 3vh;
+}
+
+.divider{
+  width: 50vw;
+  height: 1vh;
+  margin: 1em auto .5em;
+}
+
+.jumbotron{
+  position: relative;
+  margin-bottom: 130px;
+  margin-top: 3rem;
+  background-image: url(../images/screen.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 45vh;
+}
+
+.profile-picture{
+  display: block;
+  width: 40vh;
+  height: 40vh;
+  margin-top: 10vh;
+  border-radius: 40vh;
+  border-style: solid;
+  border-color: white;
+  border-width: .5vh;
+}
+
+.spacer{
+  height: 20vh;
+}
+
+#brand{
+  font-family: 'Stalinist One';
+}
+
+#container-left{
+  margin-top: 5em;
+  text-align: justify;
+  padding-right: 35%;
+}
+
+#container-right{
+  margin-top: 5em;
+  text-align: justify;
+  padding-left: 35%;
+}
+
+#title{
+  font-family: 'Montserrat'
+}
