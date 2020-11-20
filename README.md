@@ -1,4 +1,4 @@
 # lucapettinari
-Personal Website
+Personal Webpage
 
 URL: https://liukpet.github.io/lucapettinari/
