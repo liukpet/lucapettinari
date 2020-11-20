@@ -25,28 +25,27 @@
 
 <body>
 
+  <!-- Header -->
   <header>
 
     <!-- navigation bar on top, made fixed as the webpage is scrolled down -->
     <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
-      <a class="navbar-brand" href="#" id="brand">Luca Pettinari</a>
+      <a class="navbar-brand" href="index.html" id="brand">Luca Pettinari</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse">
         <ul class="navbar-nav ml-auto" id="navbar">
           <li class="navbar-item">
-            <a class="nav-link" href="#">Home</a>
+            <a class="nav-link" href="work.html">Work</a>
           </li>
           <li class="navbar-item">
-            <a class="nav-link" href="#">Work Experience</a>
+            <a class="nav-link" href="edu.thml">Education</a>
           </li>
           <li class="navbar-item">
-            <a class="nav-link" href="#">Education</a>
+            <a class="nav-link" href="music.html">Music</a>
           </li>
-          <li class="navbar-item">
-            <a class="nav-link" href="#">Hobbies</a>
-          </li>
+          <!-- Contact button needs some js to scroll to footer when clicked -->
           <li class="navbar-item">
             <a class="nav-link" href="#">Contact</a>
           </li>
@@ -70,12 +69,12 @@
 
   <hr class="cdots">
 
+  <!-- Main -->
   <main>
     <!-- here the code about your: skills, education, work experience, etc.-->
     <h1 class="display-4 text-center text-dark"> My Essence. </h1>
 
-    <!-- use row-cols stuff!-->
-
+    <!-- use row-cols classes -->
     <div class="row">
       <div class="col-md-8 container-left">
         <h5 class="display-6"> Passion for Engineering. </h5>
@@ -118,45 +117,40 @@
   <!-- Footer -->
   <footer class="page-footer font-small text-light bg-dark pt-4">
 
-    <!-- Footer Links -->
+    <!-- Footer Contacts -->
     <div class="container text-center text-md-left">
       <div class="row text-center text-md-left mt-3 pb-3">
 
-        <!-- Grid column -->
         <div class="col-md-4 col-lg-3 col-xl-3 ml-auto mt-3">
           <h6 class="text-uppercase mb-4 font-weight-bold">Contact</h6>
           <p><i class="fas fa-home mr-3"></i>Civitanova Marche, Italy</p>
           <p><i class="fas fa-envelope mr-3"></i><a href="mailto:lalb.pettinari@gmail.com"> lalb.pettinari@gmail.com</a></p>
           <p><i class="fas fa-phone mr-3"></i> + 39 338 334 9649</p>
         </div>
-        <!-- Grid column -->
 
       </div>
 
-      <!-- Footer links -->
-
       <hr>
 
-      <!-- Grid row -->
       <div class="row d-flex align-items-center">
-
-        <!-- Grid column -->
         <div class="col-md-7 col-lg-8">
 
-          <!--Copyright-->
           <p class="text-center text-md-left">© 2020 Copyright:
             <strong>Luca Pettinari</strong>
           </p>
 
         </div>
-        <!-- Grid column -->
-
-        <!-- Grid column -->
         <div class="col-md-5 col-lg-4 mr-lg-0">
 
           <!-- Social buttons -->
           <div class="text-center text-md-right">
             <ul class="list-unstyled list-inline">
+              <li class="list-inline-item">
+                <!-- Resume -->
+                <a class="btn-floating btn-sm rgba-white-slight mx-2" href="#">
+                  <i class="fab f"></i>
+                </a>
+              </li>
               <li class="list-inline-item">
                 <!-- Linkedin -->
                 <a class="btn-floating btn-sm rgba-white-slight mx-2" href="https://www.linkedin.com/in/luca-alberto-pettinari-2b7a80162/">
@@ -182,7 +176,6 @@
     </div>
 
   </footer>
-  <!-- Footer -->
 
 </body>
 

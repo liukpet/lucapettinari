@@ -30,6 +30,11 @@ main{
   margin: 1em auto .5em;
 }
 
+.info-page{
+  height: 100vh;
+  padding-top: 5em;
+}
+
 .jumbotron{
   position: relative;
   margin-bottom: 130px;
@@ -42,6 +47,10 @@ main{
 
 .list-inline-link{
   padding: inherit 100px;
+}
+
+.nav-link{
+  margin: 0 1rem;
 }
 
 .profile-picture{
