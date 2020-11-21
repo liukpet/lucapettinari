@@ -18,6 +18,10 @@ main{
   line-height: 2;
 }
 
+.container{
+  background-color: white;
+}
+
 .container-right{
   margin-top: 5em;
   text-align: justify;
