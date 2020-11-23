@@ -1,9 +1,9 @@
-main{
+main {
   padding: 0 10%;
   background-color: white;
 }
 
-.cdots{
+.cdots {
   color: #99a8b2;
   width: 10%;
   margin: 20vh auto;
@@ -11,42 +11,42 @@ main{
   border-width: 3vh;
 }
 
-.container-left{
+.container-left {
   margin-top: 5em;
   text-align: justify;
   margin-right: auto;
   line-height: 2;
 }
 
-.container-right{
+.container-right {
   margin-top: 5em;
   text-align: justify;
   margin-left: auto;
   line-height: 2;
 }
 
-.divider{
+.divider {
   width: 50vw;
   height: 1vh;
   margin: 1em auto .5em;
 }
 
-.footer-icon{
+.footer-icon {
   width: 20px;
   height: 20px;
 }
 
-.footer-icon:hover{
-  width: 40px;
-  height: 56px;
+.footer-icon:hover {
+  width: 60px;
+  height: 60px;
 }
 
-.info-page{
+.info-page {
   height: 100vh;
   padding-top: 5em;
 }
 
-.jumbotron{
+.jumbotron {
   position: relative;
   margin-bottom: 130px;
   margin-top: 3rem;
@@ -56,11 +56,11 @@ main{
   height: 45vh;
 }
 
-.nav-link{
+.nav-link {
   margin: 0 1rem;
 }
 
-.profile-picture{
+.profile-picture {
   display: block;
   width: 40vh;
   height: 40vh;
@@ -71,14 +71,14 @@ main{
   border-width: 1%;
 }
 
-.spacer{
+.spacer {
   height: 20vh;
 }
 
-#brand{
+#brand {
   font-family: 'Stalinist One';
 }
 
-#title{
-  font-family: 'Montserrat'
+#title {
+  font-family: 'Montserrat';
 }
