@@ -48,12 +48,14 @@
             <a class="nav-link" href="music.html">Music</a>
           </li>
           <!-- Contact button needs some js to scroll to footer when clicked -->
+          <script src="js/scrollToFooter.js"></script>
           <li class="navbar-item">
-            <a class="nav-link" href="#">Contact</a>
+            <a class="nav-link" onclick="scrollToFooter();">Contact</a>
           </li>
         </ul>
       </div>
     </nav>
+
   </header>
 
   <!-- Main -->
@@ -62,7 +64,7 @@
   </main>
 
   <!-- Footer -->
-  <footer class="page-footer font-small text-light bg-dark pt-4">
+  <footer class="page-footer font-small text-light bg-dark pt-4" id="footer">
 
     <!-- Footer Contacts -->
     <div class="container text-center text-md-left">
