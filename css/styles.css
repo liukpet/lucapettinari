@@ -90,7 +90,7 @@ main {
 
 /* MEDIA QUERIES */
 
-@media (max-width: 8cm) {
+@media (max-width: 14cm) {
 
   .jumbotron {
     height: 10rem;
