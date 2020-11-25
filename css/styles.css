@@ -4,7 +4,7 @@ html {
 
 main {
   padding: 0 10%;
-  background-color: white;
+  background-color: #ffffff;
 }
 
 .cdots {
@@ -81,4 +81,5 @@ main {
 
 #brand {
   font-family: 'Stalinist One';
+  margin: 0;
 }
