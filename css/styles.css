@@ -49,10 +49,10 @@ main {
 
 .cdots {
   color: #99a8b2;
-  width: 5rem;
+  width: 100px;
   margin: 5rem auto;
   border-style: dotted none none;
-  border-width: 1rem;
+  border-width: 15px;
 }
 
 .container-left {
