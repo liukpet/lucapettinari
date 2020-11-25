@@ -7,6 +7,43 @@ main {
   background-color: #ffffff;
 }
 
+#brand {
+  font-family: 'Stalinist One';
+  margin: 0;
+}
+
+/* HEADER */
+
+.jumbotron {
+  text-align: center;
+  margin-bottom: 10rem;
+  margin-top: 3rem;
+  padding: 0;
+  background-image: url(../images/screen.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 16rem;
+}
+
+.nav-link {
+  margin: 0 1rem;
+}
+
+.profile-picture {
+  width: 16rem;
+  height: 16rem;
+  margin: 8rem;
+  border-radius: 100%;
+  border-style: solid;
+  border-color: white;
+}
+
+.spacer {
+  height: 20vh;
+}
+
+/* MAIN */
+
 .cdots {
   color: #99a8b2;
   width: 15%;
@@ -35,6 +72,8 @@ main {
   margin: 1em auto .5em;
 }
 
+/* FOOTER */
+
 .footer-icon {
   width: 20px;
   height: 20px;
@@ -45,41 +84,22 @@ main {
   height: 60px;
 }
 
-.info-page {
-  height: 100vh;
-  padding-top: 5em;
+.footer-link{
+  color: #ffffff;
 }
 
-.jumbotron {
-  position: relative;
-  margin-bottom: 130px;
-  margin-top: 3rem;
-  background-image: url(../images/screen.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 45vh;
-}
+/* MEDIA QUERIES */
 
-.nav-link {
-  margin: 0 1rem;
-}
+@media (max-width: 8cm) {
 
-.profile-picture {
-  display: block;
-  width: 40vh;
-  height: 40vh;
-  margin-top: 10vh;
-  border-radius: 100%;
-  border-style: solid;
-  border-color: white;
-  border-width: 2%;
-}
+  .jumbotron {
+    height: 10rem;
+  }
 
-.spacer {
-  height: 20vh;
-}
+  .profile-picture {
+    width: 10rem;
+    height: 10rem;
+    margin: 5rem;
+  }
 
-#brand {
-  font-family: 'Stalinist One';
-  margin: 0;
 }
