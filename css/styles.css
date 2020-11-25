@@ -90,10 +90,11 @@ main {
 
 /* MEDIA QUERIES */
 
-@media (max-width: 14cm) {
+@media (max-width: 500px) { /* 300/96 = 3.125in = 7.93cm */
 
   .jumbotron {
     height: 10rem;
+    margin-bottom: 7rem;
   }
 
   .profile-picture {
