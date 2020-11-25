@@ -46,10 +46,10 @@ main {
 
 .cdots {
   color: #99a8b2;
-  width: 15%;
-  margin: 20vh auto;
+  width: 5rem;
+  margin: 5rem auto;
   border-style: dotted none none;
-  border-width: 3vh;
+  border-width: 1rem;
 }
 
 .container-left {
