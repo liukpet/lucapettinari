@@ -1,3 +1,5 @@
+/* HTML ELEMENTS */
+
 html {
   scroll-behavior: smooth;
 }
@@ -8,15 +10,57 @@ body {
 }
 
 main {
-  padding: 0 10%;
+  padding: 5rem 5rem;
 }
+
+/* CUSTOM CLASSES */
 
 #brand {
   font-family: 'Stalinist One';
   margin: 0;
 }
 
-/* HEADER */
+.cdots {
+  color: #99a8b2;
+  width: 100px;
+  margin: 5rem auto 0;
+  border-style: dotted none none;
+  border-width: 15px;
+}
+
+.text-container {
+  margin-top: 5em;
+  text-align: justify;
+  line-height: 2;
+}
+
+.text-container.left-aligned {
+  margin-right: auto;
+}
+
+.text-container.right-aligned {
+  margin-left: auto;
+}
+
+.divider {
+  width: 90%;
+  height: 3px;
+  margin: 1rem auto .5rem;
+}
+
+.footer-icon {
+  width: 20px;
+  height: 20px;
+}
+
+.footer-icon:hover {
+  width: 60px;
+  height: 60px;
+}
+
+.footer-link {
+  color: #ffffff;
+}
 
 .jumbotron {
   text-align: center;
@@ -33,63 +77,17 @@ main {
   margin: 0 1rem;
 }
 
+.nav-link.no-mr {
+  margin-right: 0;
+}
+
 .profile-picture {
   width: 16rem;
   height: 16rem;
   margin: 8rem;
   border-radius: 100%;
   border-style: solid;
-  border-color: white;
-}
-
-.spacer {
-  height: 20vh;
-}
-
-/* MAIN */
-
-.cdots {
-  color: #99a8b2;
-  width: 100px;
-  margin: 5rem auto;
-  border-style: dotted none none;
-  border-width: 15px;
-}
-
-.container-left {
-  margin-top: 5em;
-  text-align: justify;
-  margin-right: auto;
-  line-height: 2;
-}
-
-.container-right {
-  margin-top: 5em;
-  text-align: justify;
-  margin-left: auto;
-  line-height: 2;
-}
-
-.divider {
-  width: 80%;
-  height: 1vh;
-  margin: 1em auto .5em;
-}
-
-/* FOOTER */
-
-.footer-icon {
-  width: 20px;
-  height: 20px;
-}
-
-.footer-icon:hover {
-  width: 60px;
-  height: 60px;
-}
-
-.footer-link{
-  color: #ffffff;
+  border-color: #ffffff;
 }
 
 /* MEDIA QUERIES */
