@@ -10,6 +10,7 @@ body {
 }
 
 main {
+  min-height: 1000px;
   padding: 5rem 5rem;
 }
 

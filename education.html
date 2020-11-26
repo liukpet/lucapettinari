@@ -3,6 +3,7 @@
 <html lang="en" dir="ltr">
 
 <head>
+  <!-- the meta attribute "name = viewport" is used to make the website appearence responsive on mobile -->
   <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1">
 
   <!-- BOOTSTRAP -->
@@ -21,7 +22,7 @@
   <!-- CSS. Note: always include this AFTER the bootstrap css file in order to override properties of bootstrap components -->
   <link rel="stylesheet" href="css/styles.css">
 
-  <title>lucapettinari-education</title>
+  <title>lucapettinari</title>
 </head>
 
 <body>
@@ -50,13 +51,13 @@
           <!-- Contact button needs some js to scroll to footer when clicked -->
           <script src="js/scrollToFooter.js"></script>
           <li class="navbar-item">
-            <a class="nav-link" onclick="scrollToFooter();" style="margin-right: 0">Contact</a>
+            <a class="nav-link no-mr" onclick="scrollToFooter();">Contact</a>
           </li>
           <li class="navbar-item">
-            <a class="nav-link" href="#" style="margin-right: 0">🇮🇹</a>
+            <a class="nav-link no-mr" href="#">🇮🇹</a>
           </li>
           <li class="navbar-item">
-            <a class="nav-link" href="#" style="margin-right: 0">🇬🇧</a>
+            <a class="nav-link no-mr" href="#">🇬🇧</a>
           </li>
         </ul>
       </div>
@@ -65,21 +66,21 @@
   </header>
 
   <!-- Main -->
-  <main style="height: 1000px">
-    <!-- Info here -->
+  <main>
+
   </main>
 
   <!-- Footer -->
-  <footer class="page-footer font-small text-light bg-dark pt-4" id="footer">
+  <footer class="page-footer font-small text-light bg-dark pt-4">
 
     <!-- Footer Contacts -->
     <div class="container text-center text-md-left">
       <div class="row text-center text-md-left mt-3 pb-3">
 
-        <div class="col-md-4 col-lg-3 col-xl-3 ml-auto mt-3">
+        <div class="col-md-4 col-lg-4 col-xl-3 ml-auto mt-3 pl-1 pr-1">
           <h6 class="text-uppercase mb-4 font-weight-bold">Contact</h6>
           <p><i class="fas fa-home mr-3"></i>Civitanova Marche, Italy</p>
-          <p><i class="fas fa-envelope mr-3"></i><a href="mailto:lalb.pettinari@gmail.com"> lalb.pettinari@gmail.com</a></p>
+          <p><i class="fas fa-envelope mr-3"></i><a class="footer-link" href="mailto:lalb.pettinari@gmail.com"> lalb.pettinari@gmail.com</a></p>
           <p><i class="fas fa-phone mr-3"></i> + 39 338 334 9649</p>
         </div>
 
@@ -113,9 +114,9 @@
                 </a>
               </li>
               <li class="list-inline-item">
-                <!-- Twitter -->
+                <!-- YouTube -->
                 <a class="btn-floating btn-sm rgba-white-slight mx-2">
-                  <i class="fab fa-twitter"></i>
+                  <i class="fab fa-youtube"></i>
                 </a>
               </li>
               <li class="list-inline-item">
@@ -131,4 +132,7 @@
     </div>
 
   </footer>
+
 </body>
+
+</html>
