@@ -278,6 +278,10 @@ footer {
     font-size: 12.5rem;
   }
 
+  .carousel-main{
+    margin: 6rem inherit;
+  }
+
   .carousel-main-caption {
     width: 80%;
   }
