@@ -275,7 +275,7 @@ footer {
   }
 
   .fas-slide {
-    font-size: 10rem;
+    font-size: 11rem;
   }
 
   .carousel-main{
@@ -284,6 +284,7 @@ footer {
 
   .carousel-main-caption {
     width: 80%;
+    font-size: 15px;
   }
 
 }
