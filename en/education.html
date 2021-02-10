@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+
+<html lang="en" dir="ltr">
+
+<head>
+  <!-- the meta attribute "name = viewport" is used to make the website appearence responsive on mobile -->
+  <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- BOOTSTRAP -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+
+  <!--FONTS -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Stalinist+One&display=swap" rel="stylesheet">
+
+  <!-- FONT AWESOME -->
+  <script src="https://kit.fontawesome.com/c854038af6.js" crossorigin="anonymous"></script>
+
+  <!-- CSS. Note: always include this AFTER the bootstrap css file in order to override properties of bootstrap components -->
+  <link rel="stylesheet" href="../css/styles.css">
+
+  <title>lucapettinari</title>
+</head>
+
+<body>
+
+  <!-- Header -->
+  <header>
+
+    <!-- navigation bar on top, made fixed as the webpage is scrolled down -->
+    <!-- Note: button's data target address the id property of the div that is going to be dropped down onclick! -->
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+      <a class="navbar-brand" href="index.html" id="brand">Luca Pettinari</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        <ul class="navbar-nav ml-auto">
+          <li class="navbar-item">
+            <a class="nav-link" href="work.html">Work</a>
+          </li>
+          <li class="navbar-item">
+            <a class="nav-link" href="education.html">Education</a>
+          </li>
+          <li class="navbar-item">
+            <a class="nav-link" href="music.html">Music</a>
+          </li>
+          <!-- Contact button needs some js to scroll to footer when clicked -->
+          <li class="navbar-item">
+            <a class="nav-link no-mr">Blog</a>
+          </li>
+          <li class="navbar-item">
+            <a class="nav-link no-mr" href="#">🇮🇹</a>
+          </li>
+          <li class="navbar-item">
+            <a class="nav-link no-mr" href="#">🇬🇧</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+  </header>
+
+  <!-- Main -->
+  <main class="hl-page">
+    <h1 class="display-4 text-dark hl-title"> Education </h1>
+    <div class="hl-body">
+      <div class="hl-center edu-img1-width">
+        <img src="../images/education/img-edu1.jpg" alt="engineering-faculty-pic" class="edu-img1">
+        <p class="hl-caption"> Engineering Faculty, UNIVPM (Italy). </p>
+      </div>
+      <p class="hl-text-section">
+        After concluding secondary education studies at Liceo Scientifico <a class="hl-link-edu" href="http://www.iisdavinci.edu.it/">IIS Da Vinci</a>, I enrolled in the undergraduate course of Biomedical Engineering (degree class: L-8) at <a class="hl-link-edu"
+          href="https://www.univpm.it/Entra/">UNIVPM</a> (Marches, Italy). Biomedical Engineering uses engineering principles and disciplines in the service of human healthcare and wellbeing, therefore my studies comprised an engineering formation
+        (Maths, Physics, Chemistry, Computer Science, Electronics, etc.) and basic knowledge of human sciences (Anatomy, Physiology), together with characterizing courses like Biomechanics applied to body motion, Signal Processing of
+        physiological signals (e.g. ECG), basic Biomedical Instrumentation and Biomaterials. I carried out my undergraduate thesis project at the <a class="hl-link-edu" href="#">Department of Information Engineering</a> (DII) on the topics of
+        Assistive Robotics, in particular simulation and trajectory planning of a 6-DOF anthropomorphic arm (<a class="hl-link-edu" target="blank" href="../docs/BSc_Thesis.pdf">click here</a> to download my BSc. Thesis).
+      </p>
+      <div class="hl-left edu-img2-width">
+
+        <!-- Caroseul included -->
+        <div class="carousel slide slide-onside edu-img2-width" data-ride="carousel" data-interval="5000">
+          <div class="carousel-inner edu-img2-width">
+            <div class="carousel-item active">
+              <img class="edu-img2" src="../images/education/img-edu2-slide1.png" alt="First slide">
+              <p class="hl-caption">ECG artifact detected on electrical brain activity component signal.</p>
+            </div>
+            <div class="carousel-item">
+              <img class="edu-img2" src="../images/education/img-edu2-slide2.jpg" alt="Second slide">
+              <p class="hl-caption">Prototyping of an EMG signal acquisition board coupled with an Arduino UNO.</p>
+            </div>
+            <div class="carousel-item">
+              <img class="edu-img2" src="../images/education/img-edu2-slide3.png" alt="Third slide">
+              <p class="hl-caption">A tool to process kinesiological data from the <a class="hl-link-edu" href="http://br3in.dii.univpm.it/movement-analysis-lab/">Laboratory of Movement Analysis</a> (DII).</p>
+            </div>
+          </div>
+        </div>
+        <!-- This empty tag allows to be consistent with all other hl floated frames. -->
+      </div>
+    <p class="hl-text-section">
+      After graduation, I started the MSc. course in <a class="hl-link-edu" href="https://www.univpm.it/Entra/Offerta_formativa_1/Corso_di_laurea_magistrale_in_Biomedical_Engineering">Biomedical Engineering</a> (LM-21) at the same university, of the duration of 2 years and completely taught in English. As for any 2<sup>nd</sup> level degree course,
+      the subjects were more specialized and aimed to study the main physiological organ systems under the paradigms of information engineering, using concepts and principles from Control Theory, Signal Processing and Physics.
+      In addition to this main strand, there were affine courses like Advanced Biomedical Instrumentation, Assistive Robotics and Bioinformatics. Alongside classes and exams, most of the courses expected a workshop or a student project,
+      which helped to refine consistentely "hands-on" capabilities and skills. For example, for the course of "Brain Research and Bioimaging", I dealt with electroencephalogram signals (EEG) to locate brain functional area activations
+      during a predefined test: this required an in-depth study of the independent component analysis (ICA) algorithm, in order to not only isolate brain area activations, but also separate artifacts and noise from signal source.
+      Particularly compelling was also the project for the Biomedical Instrumentation course, where I had to prototype, design and realize a working electromyograph (EMG), i.e. a sensor capable to collect the surface electrical activity
+      of muscles. Particular care was devoted to study of the circuit, cascading amplification and filtering blocks and then assembling them on a printed circuit board (PCB) fully compatible with Arduino, which served as A/D for the EMG
+      signal. For the second year, I continued to work with fellow students on several other projects, one of which resulted in a conference paper (<a class="hl-link-edu" href="https://ieeexplore.ieee.org/document/8743648">click here</a>
+      to see the publication). Another one, from the course of "Bioengineering of Motor Rehabilitation", regarded posture and gait data analysis, for which I developed a MATLAB toolkit to parse and process such data and produce clinical
+      reports (<a class="hl-link-edu" target="blank" href="../docs/Report_BMR.pdf">click here</a> to learn more).
+
+    </p>
+    <div class="hl-right edu-img3-width">
+      <img class="edu-img3" src="../images/education/img-edu3.jpg" alt="graduation-day-pic">
+      <p class="hl-caption"> Graduation Day.</p>
+    </div>
+    <p class="hl-text-section" id="msc-section">
+      Most of the MSc. thesis project was carried out mostly at <a class="hl-link-edu" href="https://www.audeering.com/">audEERING</a>. The purpose was to estimate heart rate from voice, starting from the scientific evidence (<em>Orlikoff et al.</em>)
+      that heart pumping activity can affect the vocal tract, modulating the speech signal with subtle variations. In order to extract such information, the idea was to train supervised learning models, fed with synchronized audio (feature) and ECG (label)
+      data, collected from tailored experiments conducted with a specific protocol of acquisition. Then, once the models were trained, performances had to be validated against existing literature results. To follow this outline, I first managed to build a
+      audio-ECG acquisition system, with particular attention on trasmission and synchronization of such data to the computer. Second, I had to design and implement the experiments to build the dataset, which meant to obtain data in different, yet repeatable,
+      conditions. To do so, participants had to perfom speech tasks at three different levels of exercise (rest, mild, fatigue): every participant had to produce sustained vowels (i.e. a prolonged sounds of alphabet vowels maintaining a stable pitch),
+      then read a standard text in Phonetics for each level. To raise the pulse, a fitness cycle was used, and the heart rate was monitored in real-time to assure that the threshold for the current exercise level was reached by all participants. To automate the
+      process of data collection, a software application was developed with <a class="hl-link-edu" href="https://pypi.org/project/PyQt5/">PyQt5</a>. Then, data collection involved 31 participants and comprised audio and ECG tracks, video data (for possible future
+      studies of heart rate detection on face skin tone changes) and metadata. Then, to generate learning examples out of the dataset, audio segments were processed with <a class="hl-link-edu" href="https://www.audeering.com/opensmile/">openSMILE</a>, audEERING's
+      benchmark product used worldwide for large-space audio feature extraction. Training labels were instead obtained by a tailored beat-detection algorithm, capable of converting ECG signals in Beats per Minute (BPM). Finally, classification and regression models
+      were fitted on such training examples. Classification models, i.e. those to predict (from sustained vowels) whether the heart rate was below or above a certain threshold (set to 100 BPM), resulted in a 86% accuracy score. Similarly, also regression was studied,
+      i.e. predicting the heart rate (in BPMs) directly from audio data, resulting in a 10.6 BPM mean absolute error (MAE) with a correlation coefficient (CC) of 83% between predicted values and ground truth
+      (<a class="hl-link-edu" href="../docs/MSc_thesis.pdf" target="blank">click here</a> to download my Msc. Thesis). I defended my Msc. Thesis on July 24<sup>th</sup>, awarded with honours.
+    </p>
+    </div>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="page-footer font-small text-light bg-dark pt-4">
+
+    <!-- Footer Contacts -->
+    <div class="container text-center text-md-left">
+      <div class="row text-center text-md-left mt-3 pb-3">
+
+        <div class="col-md-4 col-lg-4 col-xl-3 ml-auto mt-3 pl-1 pr-1">
+          <h6 class="text-uppercase mb-4 font-weight-bold">Contact</h6>
+          <p><i class="fas fa-home mr-3"></i>Civitanova Marche, Italy</p>
+          <p><i class="fas fa-envelope mr-3"></i><a class="footer-link" href="mailto:lalb.pettinari@gmail.com"> lalb.pettinari@gmail.com</a></p>
+          <p><i class="fas fa-phone mr-3"></i> + 39 338 334 9649</p>
+        </div>
+
+      </div>
+
+      <hr>
+
+      <div class="row d-flex align-items-center">
+        <div class="col-md-7 col-lg-8">
+
+          <p class="text-center text-md-left">© 2020 Copyright:
+            <strong>Luca Pettinari</strong>
+          </p>
+
+        </div>
+        <div class="col-md-5 col-lg-4 mr-lg-0">
+
+          <!-- Social buttons -->
+          <div class="text-center text-md-right">
+            <ul class="list-unstyled list-inline">
+              <li class="list-inline-item">
+                <!-- Resume -->
+                <a class="btn-floating btn-sm rgba-white-slight mx-2" href="../docs/CV_Pettinari(ENG).pdf" target="blank">
+                  <img class="footer-icon" src="../icons/cv.png">
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <!-- Linkedin -->
+                <a class="btn-floating btn-sm rgba-white-slight mx-2" href="https://www.linkedin.com/in/luca-alberto-pettinari-2b7a80162/">
+                  <i class="fab fa-linkedin-in"></i>
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <!-- YouTube -->
+                <a class="btn-floating btn-sm rgba-white-slight mx-2">
+                  <i class="fab fa-youtube"></i>
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <!-- Instagram -->
+                <a class="btn-floating btn-sm rgba-white-slight mx-2" href="https://www.instagram.com/pettinariluca/">
+                  <i class="fab fa-instagram"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </footer>
+
+  <script src="../js/index.js"></script>
+
+</body>
+
+</html>

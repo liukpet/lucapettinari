@@ -9,8 +9,12 @@
   <!-- BOOTSTRAP -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
 
+  <!-- JQUERY -->
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
 
   <!--FONTS -->
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
@@ -20,7 +24,7 @@
   <script src="https://kit.fontawesome.com/c854038af6.js" crossorigin="anonymous"></script>
 
   <!-- CSS. Note: always include this AFTER the bootstrap css file in order to override properties of bootstrap components -->
-  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="../css/styles.css">
 
   <title>lucapettinari</title>
 </head>
@@ -28,16 +32,16 @@
 <body>
 
   <!-- Header -->
-  <header id="header">
+  <header>
 
     <!-- navigation bar on top, made fixed as the webpage is scrolled down -->
     <!-- Note: button's data target address the id property of the div that is going to be dropped down onclick! -->
     <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
       <a class="navbar-brand" href="index.html" id="brand">Luca Pettinari</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-collapse">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="collapse navbar-collapse" id="navbarCollapse">
+      <div class="collapse navbar-collapse" id="navbar-collapse">
         <ul class="navbar-nav ml-auto">
           <li class="navbar-item">
             <a class="nav-link" href="work.html">Work</a>
@@ -49,9 +53,8 @@
             <a class="nav-link" href="music.html">Music</a>
           </li>
           <!-- Contact button needs some js to scroll to footer when clicked -->
-          <script src="js/scrollToFooter.js"></script>
           <li class="navbar-item">
-            <a class="nav-link no-mr" onclick="scrollToFooter();">Contact</a>
+            <a class="nav-link no-mr" href="#">Blog</a>
           </li>
           <li class="navbar-item">
             <a class="nav-link no-mr" href="#">🇮🇹</a>
@@ -63,15 +66,75 @@
       </div>
     </nav>
 
+    <!-- jumbotron containing profile picture, which is offset downwards-->
+    <div class="jumbotron jumbotron-fluid">
+      <img class="profile-picture img-fluid mx-auto" src="../images/profile.png" alt="luca's picture">
+    </div>
+
+    <div class="container">
+      <div class="divider py-1 bg-dark"></div>
+      <h1 class="display-3 text-center text-dark">Luca Pettinari</h1>
+      <h4 class="display-5 text-center text-dark">Engineer&nbsp&nbsp&nbsp&middot&nbsp&nbsp&nbspResearch Fellow<h4>
+      <div class="divider py-1 bg-dark"></div>
+    </div>
+
   </header>
+  <!-- hr class="cdots"-->
 
   <!-- Main -->
-  <main>
+  <div class="main-page">
+    <div id="skill-carousel" class="carousel slide" data-ride="carousel" data-interval="5000">
+      <div class="carousel-inner carousel-main">
+        <div class="carousel-item active">
+          <i class="fas fa-heartbeat fas-slide text-danger"></i>
+          <div class="carousel-main-caption">
+            <h3 class="display-5 py-2"> AI & Healthcare </h4>
+            <p> With a bioengineering background and work experience in Data Science,
+              I believe in the enormous potential of AI in Medicine and Digital Healthcare. </p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <i class="fas fa-laptop-code fas-slide text-primary"></i>
+          <div class="carousel-main-caption">
+            <h3 class="display-5 py-2"> Software Engineering </h4>
+            <p> No coding addiction, just the awareness that even the
+              smallest piece of code must be clean, logical and reusable.
+              That's what I think every time I sit in front of my laptop.</p>
+          </div>
+        </div>
 
-  </main>
+        <div class="carousel-item">
+          <i class="fas fa-microchip fas-slide text-info"></i>
+          <div class="carousel-main-caption">
+            <h3 class="display-5 py-2"> Electronics </h4>
+            <p> Alan Kay stated "People who are really serious about software
+              should make their own hardware". I totally embrace his claim.</p>
+          </div>
+        </div>
+
+        <div class="carousel-item">
+          <i class="fas fa-code-branch fas-slide text-success"></i>
+          <div class="carousel-main-caption">
+            <h3 class="display-5 py-2"> Team Work </h4>
+            <p> Problem solving is the muscle of every engineer. Team cooperation,
+              exchange of ideas and results sharing are the ingredients to truly fuel it.</p>
+          </div>
+        </div>
+
+        <div class="carousel-item">
+          <i class="fas fa-globe-europe fas-slide text-warning"></i>
+          <div class="carousel-main-caption">
+            <h3 class="display-5 py-2"> Communication </h3>
+            <p> With a MSc. taught completely in English, work experience abroad
+              and fluency in 3 languages, I feel confortable in international contexts and situations.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 
   <!-- Footer -->
-  <footer class="page-footer font-small text-light bg-dark pt-4" id="footer">
+  <footer class="page-footer font-small text-light bg-dark pt-4">
 
     <!-- Footer Contacts -->
     <div class="container text-center text-md-left">
@@ -103,13 +166,13 @@
             <ul class="list-unstyled list-inline">
               <li class="list-inline-item">
                 <!-- Resume -->
-                <a class="btn-floating btn-sm rgba-white-slight mx-2" href="docs/CV_Luca Pettinari.pdf" target="blank">
-                  <img class="footer-icon" src="icons/cv.png">
+                <a class="btn-floating btn-sm rgba-white-slight mx-2" href="../docs/CV_Luca Pettinari.pdf" target="blank">
+                  <img class="footer-icon" src="../icons/cv.png">
                 </a>
               </li>
               <li class="list-inline-item">
                 <!-- Linkedin -->
-                <a class="btn-floating btn-sm rgba-white-slight mx-2" href="https://www.linkedin.com/in/luca-alberto-pettinari-2b7a80162/">
+                <a class="btn-floating btn-sm rgba-white-slight mx-2" href="https://www.linkedin.com/in/pettinariluca/">
                   <i class="fab fa-linkedin-in"></i>
                 </a>
               </li>
@@ -132,6 +195,8 @@
     </div>
 
   </footer>
+
+  <script src="../js/index.js"></script>
 
 </body>
 

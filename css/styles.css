@@ -6,12 +6,7 @@ html {
 
 body {
   background-color: #ffffff;
-  font-family: "Montserrat"
-}
-
-main {
-  min-height: 1000px;
-  padding: 5rem 10%;
+  font-family: "Montserrat";
 }
 
 /* CUSTOM CLASSES */
@@ -19,6 +14,10 @@ main {
 #brand {
   font-family: 'Stalinist One';
   margin: 0;
+}
+
+#contact-button {
+  cursor: pointer;
 }
 
 .cdots {
@@ -29,24 +28,64 @@ main {
   border-width: 15px;
 }
 
-.text-container {
-  margin-top: 5em;
-  text-align: justify;
-  line-height: 2;
+.carousel-main {
+  text-align: center;
+  margin-top: 6rem;
+  padding: 0% 10%;
 }
 
-.text-container.left-aligned {
-  margin-right: auto;
+.carousel-main-caption {
+  margin: 4rem auto;
+  width: 55%;
 }
 
-.text-container.right-aligned {
-  margin-left: auto;
+.slide-centre {
+  width: 100%;
+  height: 500px;
+}
+
+.div-animated {
+  opacity: 0;
 }
 
 .divider {
   width: 90%;
   height: 3px;
   margin: 1rem auto .5rem;
+}
+
+.edu-img1 {
+  width: 570px;
+  height: 282px;
+}
+
+.edu-img1-width {
+  width: 570px;
+  margin-bottom: 0;
+}
+
+.edu-img2 {
+  width: 422px;
+  height: 238px;
+}
+
+.edu-img2-width {
+  width: 422px;
+  margin-bottom: 2rem;
+}
+
+.edu-img3 {
+  width: 300px;
+  height: 400px;
+}
+
+.edu-img3-width {
+  width: 300px;
+  margin-bottom: 0;
+}
+
+.fas-slide {
+  font-size: 20rem;
 }
 
 .footer-icon {
@@ -65,13 +104,79 @@ main {
 
 .jumbotron {
   text-align: center;
-  margin-bottom: 10rem;
+  margin-bottom: 12rem;
   margin-top: 3rem;
   padding: 0;
   background-image: url(../images/screen.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   height: 16rem;
+}
+
+.hl-page {
+  position: relative;
+  margin-top: 3rem;
+  padding: 5% 10%;
+}
+
+.hl-title {
+  margin: 2rem 0;
+}
+
+.hl-left {
+  margin-right: 20px;
+  text-align: center;
+  float: left;
+}
+
+.hl-right {
+  margin-left: 20px;
+  text-align: center;
+  float: right;
+}
+
+.hl-center {
+  margin: 0 auto;
+  text-align: center;
+}
+
+.hl-caption {
+  font-style: italic;
+  font-weight: bolder;
+  font-size: 14px;
+  margin: 0;
+  padding: 0.5rem 0.75rem;
+}
+
+.hl-text-section {
+  text-align: justify;
+  line-height: 2;
+  margin: 0.75rem 0;
+}
+
+.hl-link-work {
+  color: #c70039;
+  font-weight: bold;
+}
+
+:hover.hl-link-work {
+  text-decoration: none;
+  color: #ff5733;
+}
+
+.hl-link-edu {
+  color: #2d6187;
+  font-weight: bold;
+}
+
+:hover.hl-link-edu {
+  text-decoration: none;
+  color: #28abb9;
+}
+
+.main-page {
+  min-height: 800px;
+  padding: 5% 10%;
 }
 
 .nav-link {
@@ -86,9 +191,63 @@ main {
   width: 16rem;
   height: 16rem;
   margin: 8rem;
+  border: double 4px transparent;
   border-radius: 100%;
-  border-style: solid;
-  border-color: #ffffff;
+  box-shadow: 0 0 0 4px #343a40;
+  background-image: linear-gradient(white, white), radial-gradient(circle at top left, #f00,#3020ff);
+  background-origin: border-box;
+  background-clip: content-box, border-box;
+}
+
+.slide-onside {
+  width: 600px;
+  height: 250px;
+  opacity: .5;
+}
+
+:hover.slide-onside {
+  opacity: 1;
+}
+
+.text-container {
+  margin-top: 5em;
+  text-align: justify;
+  line-height: 2;
+}
+
+.text-container.left-aligned {
+  margin-right: auto;
+}
+
+.text-container.right-aligned {
+  margin-left: auto;
+}
+
+.work-img1 {
+  height: 350px;
+  width: 300px;
+}
+
+.work-img1-width {
+  width: 300px;
+}
+
+.work-img2 {
+  height: 342px;
+  width: 457px;
+}
+
+.work-img2-width {
+  width: 457px;
+}
+
+.work-img3 {
+  height: 272px;
+  width: 415px;
+}
+
+.work-img3-width {
+  width: 415px;
 }
 
 /* MEDIA QUERIES */
@@ -104,6 +263,76 @@ main {
     width: 10rem;
     height: 10rem;
     margin: 5rem;
+  }
+
+  .main-page {
+    min-height: 800px;
+    width: 100%;
+    padding: 0;
+  }
+
+  .fas-slide {
+    font-size: 10rem;
+  }
+
+  .carousel-main-caption {
+    width: 80%;
+  }
+
+}
+
+@media (max-width: 750px) {
+
+  .hl-left, .hl-right {
+    float: none;
+    margin: auto;
+    text-align: center;
+    width: 100%;
+  }
+
+  .hl-center{
+    width: 100%;
+  }
+
+  .work-img1 {
+    width: 100%;
+    height: 116%;
+  }
+
+  .work-img2 {
+    width: 100%;
+    height: 74%;
+  }
+
+  .work-img3 {
+    width: 100%;
+    height: 67%;
+  }
+
+  .edu-img1 {
+    width: 80%;
+    height: 30%;
+  }
+
+  .edu-img2 {
+    width: 80%;
+    height: 30%;
+  }
+
+  .edu-img3 {
+    width: 60%;
+    height: 20%;
+  }
+
+  .work-img1-width, .work-img2-width, .work-img3-width,
+  .edu-img1-width, .edu-img2-width, .edu-img3-width {
+    margin: 1.5rem auto;
+    width: 100%;
+    height: 30%;
+  }
+
+  .hl-title {
+    text-align: center;
   }
 
 }
