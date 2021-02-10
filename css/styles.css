@@ -46,7 +46,7 @@ footer {
 .carousel-main-caption {
   margin: 4rem auto;
   width: 65%;
-  height: 170px;
+  height: 15rem;
 }
 
 .slide-centre {
@@ -266,10 +266,6 @@ footer {
   .jumbotron {
     height: 10rem;
     margin-bottom: 7rem;
-  }
-
-  .main-page {
-    min-height: 40rem;
   }
 
   .profile-picture {
