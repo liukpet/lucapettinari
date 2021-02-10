@@ -1,4 +1,6 @@
 # lucapettinari
-Personal Webpage
+The website is readdressed to: https://liukpet.github.io/lucapettinari/en/
 
-URL: https://liukpet.github.io/lucapettinari/
+OR
+
+https://liukpet.github.io/lucapettinari/it/

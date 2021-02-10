@@ -30,8 +30,9 @@ body {
 
 .carousel-main {
   text-align: center;
-  margin-top: 6rem;
+  margin-top: 4rem;
   padding: 0% 10%;
+  font-size: 1.15rem;
 }
 
 .carousel-main-caption {
@@ -175,8 +176,7 @@ body {
 }
 
 .main-page {
-  min-height: 800px;
-  padding: 5% 10%;
+  padding: 0 10%;
 }
 
 .nav-link {
@@ -263,12 +263,6 @@ body {
     width: 10rem;
     height: 10rem;
     margin: 5rem;
-  }
-
-  .main-page {
-    min-height: 800px;
-    width: 100%;
-    padding: 0;
   }
 
   .fas-slide {

@@ -1,3 +1,19 @@
 $('document').ready(function (){
-  consol.log("JS ready!")
+  console.log("JS ready!")
+  $("#it-flag").click(function(){
+    var new_url = swapLanguages("it");
+    window.open(new_url, "_self");
+  });
+  $("#en-flag").click(function(){
+    var new_url = swapLanguages("en");
+    window.open(new_url, "_self");
+  });
 });
+
+function swapLanguages(language) {
+    var path = window.location.pathname;
+    var parent = path.substring(0, path.lastIndexOf("/"));
+    var filename = path.substring(path.lastIndexOf("/") + 1, path.length);
+    var new_parent = parent.substring(0, parent.lastIndexOf("/")) + "/" + language + "/" + filename;
+    return new_parent;
+}
