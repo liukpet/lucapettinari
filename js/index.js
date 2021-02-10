@@ -1,5 +1,5 @@
 $('document').ready(function (){
-  console.log("JS ready!")
+  console.log("JS ready!");
   $("#it-flag").click(function(){
     var new_url = swapLanguages("it");
     window.open(new_url, "_self");
