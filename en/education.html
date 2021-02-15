@@ -45,9 +45,9 @@
           <li class="navbar-item">
             <a class="nav-link" href="education.html">Education</a>
           </li>
-          <!--li class="navbar-item">
+          <li class="navbar-item">
             <a class="nav-link" href="music.html">Music</a>
-          </li-->
+          </li>
           <li class="navbar-item">
             <a class="nav-link no-mr" href="../blog/blog-index.html">Blog</a>
           </li>
@@ -55,7 +55,7 @@
             <a class="nav-link no-mr" href="#" id="it-flag">🇮🇹</a>
           </li>
           <li class="navbar-item">
-            <a class="nav-link no-mr" href="#" id="en-flag">🇬🇧</a>
+            <a class="nav-link no-mr active" href="#" id="en-flag">🇬🇧</a>
           </li>
         </ul>
       </div>
@@ -68,7 +68,7 @@
     <h1 class="display-4 text-dark hl-title"> Education </h1>
     <div class="hl-body">
       <div class="hl-center edu-img1-width">
-        <img src="../images/education/img-edu1.jpg" alt="engineering-faculty-pic" class="edu-img1">
+        <img  class="edu-img1" src="../images/education/img-edu1.jpg" alt="engineering-faculty-pic">
         <p class="hl-caption"> Engineering Faculty, UNIVPM (Italy). </p>
       </div>
       <p class="hl-text-section">
@@ -89,11 +89,11 @@
             </div>
             <div class="carousel-item">
               <img class="edu-img2" src="../images/education/img-edu2-slide2.jpg" alt="Second slide">
-              <p class="hl-caption">Prototyping of an EMG signal acquisition board coupled with an Arduino UNO.</p>
+              <p class="hl-caption">Prototype of an EMG signal acquisition board coupled with an Arduino UNO.</p>
             </div>
             <div class="carousel-item">
               <img class="edu-img2" src="../images/education/img-edu2-slide3.png" alt="Third slide">
-              <p class="hl-caption">A tool to process kinesiological data from the <a class="hl-link-edu" href="http://br3in.dii.univpm.it/movement-analysis-lab/">Laboratory of Movement Analysis</a> (DII).</p>
+              <p class="hl-caption">A tool to process kinesiological data of the <a class="hl-link-edu" href="http://br3in.dii.univpm.it/movement-analysis-lab/">Laboratory of Movement Analysis</a> (DII).</p>
             </div>
           </div>
         </div>
@@ -101,34 +101,34 @@
       </div>
     <p class="hl-text-section">
       After graduation, I started the MSc. course in <a class="hl-link-edu" href="https://www.univpm.it/Entra/Offerta_formativa_1/Corso_di_laurea_magistrale_in_Biomedical_Engineering">Biomedical Engineering</a> (LM-21) at the same university, of the duration of 2 years and completely taught in English. As for any 2<sup>nd</sup> level degree course,
-      the subjects were more specialized and aimed to study the main physiological organ systems under the paradigms of information engineering, using concepts and principles from Control Theory, Signal Processing and Physics.
+      the subjects were more specialized and aimed to study the main physiological organ systems under the paradigms of Information Engineering, using concepts and principles from Control Theory, Signal Processing and Physics.
       In addition to this main strand, there were affine courses like Advanced Biomedical Instrumentation, Assistive Robotics and Bioinformatics. Alongside classes and exams, most of the courses expected a workshop or a student project,
-      which helped to refine consistentely "hands-on" capabilities and skills. For example, for the course of "Brain Research and Bioimaging", I dealt with electroencephalogram signals (EEG) to locate brain functional area activations
+      which helped to refine consistentely my "hands-on" capabilities and skills. For example, for the course of "Brain Research and Bioimaging", I dealt with electroencephalogram signals (EEG) to locate brain functional area activations
       during a predefined test: this required an in-depth study of the independent component analysis (ICA) algorithm, in order to not only isolate brain area activations, but also separate artifacts and noise from signal source.
       Particularly compelling was also the project for the Biomedical Instrumentation course, where I had to prototype, design and realize a working electromyograph (EMG), i.e. a sensor capable to collect the surface electrical activity
-      of muscles. Particular care was devoted to study of the circuit, cascading amplification and filtering blocks and then assembling them on a printed circuit board (PCB) fully compatible with Arduino, which served as A/D for the EMG
+      of muscles. Particular care was paid to the design of the electronic board: from cascading amplification and filtering blocks to the assembly on a printed circuit board (PCB) fully compatible with Arduino, which in this case served as A/D for the EMG
       signal. For the second year, I continued to work with fellow students on several other projects, one of which resulted in a conference paper (<a class="hl-link-edu" href="https://ieeexplore.ieee.org/document/8743648">click here</a>
-      to see the publication). Another one, from the course of "Bioengineering of Motor Rehabilitation", regarded posture and gait data analysis, for which I developed a MATLAB toolkit to parse and process such data and produce clinical
+      to see the publication). Another interesting work come from the course of "Bioengineering of Motor Rehabilitation" and regarded posture and gait data analysis, for which I developed a MATLAB toolkit to parse and process such data and produce clinical
       reports (<a class="hl-link-edu" target="blank" href="../docs/Report_BMR.pdf">click here</a> to learn more).
 
     </p>
-    <div class="hl-right edu-img3-width">
+    <div class="hl-right edu-img3-width no-margin-bottom">
       <img class="edu-img3" src="../images/education/img-edu3.jpg" alt="graduation-day-pic">
       <p class="hl-caption"> Graduation Day.</p>
     </div>
     <p class="hl-text-section" id="msc-section">
       Most of the MSc. thesis project was carried out mostly at <a class="hl-link-edu" href="https://www.audeering.com/">audEERING</a>. The purpose was to estimate heart rate from voice, starting from the scientific evidence (<em>Orlikoff et al.</em>)
-      that heart pumping activity can affect the vocal tract, modulating the speech signal with subtle variations. In order to extract such information, the idea was to train supervised learning models, fed with synchronized audio (feature) and ECG (label)
+      that heart pumping activity can affect the vocal tract, modulating the speech signal with subtle variations. In order to extract such information from speech signal, the idea was to train supervised learning models, fed with synchronized audio (feature) and ECG (label)
       data, collected from tailored experiments conducted with a specific protocol of acquisition. Then, once the models were trained, performances had to be validated against existing literature results. To follow this outline, I first managed to build a
-      audio-ECG acquisition system, with particular attention on trasmission and synchronization of such data to the computer. Second, I had to design and implement the experiments to build the dataset, which meant to obtain data in different, yet repeatable,
+      audio-ECG acquisition system, with particular attention on trasmission and synchronization of such data from the acquisition board to the computer. Second, I had to design and implement the experiments to build the dataset, which meant to obtain data in different, yet repeatable,
       conditions. To do so, participants had to perfom speech tasks at three different levels of exercise (rest, mild, fatigue): every participant had to produce sustained vowels (i.e. a prolonged sounds of alphabet vowels maintaining a stable pitch),
       then read a standard text in Phonetics for each level. To raise the pulse, a fitness cycle was used, and the heart rate was monitored in real-time to assure that the threshold for the current exercise level was reached by all participants. To automate the
       process of data collection, a software application was developed with <a class="hl-link-edu" href="https://pypi.org/project/PyQt5/">PyQt5</a>. Then, data collection involved 31 participants and comprised audio and ECG tracks, video data (for possible future
-      studies of heart rate detection on face skin tone changes) and metadata. Then, to generate learning examples out of the dataset, audio segments were processed with <a class="hl-link-edu" href="https://www.audeering.com/opensmile/">openSMILE</a>, audEERING's
+      studies of heart rate detection on face skin tone changes) and metadata of various nature. Then, to generate learning examples out of the dataset, audio segments were processed with <a class="hl-link-edu" href="https://www.audeering.com/opensmile/">openSMILE</a>, audEERING's
       benchmark product used worldwide for large-space audio feature extraction. Training labels were instead obtained by a tailored beat-detection algorithm, capable of converting ECG signals in Beats per Minute (BPM). Finally, classification and regression models
       were fitted on such training examples. Classification models, i.e. those to predict (from sustained vowels) whether the heart rate was below or above a certain threshold (set to 100 BPM), resulted in a 86% accuracy score. Similarly, also regression was studied,
       i.e. predicting the heart rate (in BPMs) directly from audio data, resulting in a 10.6 BPM mean absolute error (MAE) with a correlation coefficient (CC) of 83% between predicted values and ground truth
-      (<a class="hl-link-edu" href="../docs/MSc_thesis.pdf" target="blank">click here</a> to download my Msc. Thesis). I defended my Msc. Thesis on July 24<sup>th</sup>, awarded with honours.
+      (<a class="hl-link-edu" href="../docs/MSc_thesis.pdf" target="blank">click here</a> to download my Msc. Thesis). I defended my Msc. Thesis on July 24<sup>th</sup>, 2019, awarded with honours.
     </p>
     </div>
     </div>

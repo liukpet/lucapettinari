@@ -1,5 +1,6 @@
 $('document').ready(function (){
   console.log("JS ready!");
+
   $("#it-flag").click(function(){
     var new_url = swapLanguages("it");
     window.open(new_url, "_self");
@@ -8,6 +9,19 @@ $('document').ready(function (){
     var new_url = swapLanguages("en");
     window.open(new_url, "_self");
   });
+
+  var tag = "em";
+  var letters = $('.title').text().split('');
+  for (var i = 0; i < letters.length; i++){
+    if (i === 6){
+      tag = "span";
+    }
+    padding = 2 * Math.exp(-2.5 * i/letters.length);
+    letters[i] = "<" + tag + " class='bg-light-indigo' style='margin-right: " + padding + "rem'>" + letters[i] + "</"+ tag + ">";
+  }
+
+  var title = letters.join('');
+  $('.title').html(title);
 });
 
 function swapLanguages(language) {

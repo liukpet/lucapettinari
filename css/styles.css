@@ -10,14 +10,14 @@ header {
 
 main {
   background-color: #ffffff;
-  font-family: "Montserrat";
+  font-family: 'Montserrat';
 }
 
 footer {
-  font-family: "Montserrat";
+  font-family: 'Montserrat';
 }
 
-/* CUSTOM CLASSES */
+/* IDs */
 
 #brand {
   font-family: 'Stalinist One';
@@ -27,6 +27,8 @@ footer {
 #contact-button {
   cursor: pointer;
 }
+
+/* CUSTOM CLASSES */
 
 .cdots {
   color: #99a8b2;
@@ -46,7 +48,7 @@ footer {
 .carousel-main-caption {
   margin: 4rem auto;
   width: 65%;
-  height: 15rem;
+  height: 12.5rem;
 }
 
 .slide-centre {
@@ -71,7 +73,7 @@ footer {
 
 .edu-img1-width {
   width: 570px;
-  margin-bottom: 0;
+  margin-bottom: 1.5rem;
 }
 
 .edu-img2 {
@@ -81,7 +83,7 @@ footer {
 
 .edu-img2-width {
   width: 422px;
-  margin-bottom: 2rem;
+  margin-bottom: 1.5rem;
 }
 
 .edu-img3 {
@@ -91,7 +93,7 @@ footer {
 
 .edu-img3-width {
   width: 300px;
-  margin-bottom: 0;
+  margin-bottom: 1.5rem;
 }
 
 .fas-slide {
@@ -134,12 +136,14 @@ footer {
 }
 
 .hl-left {
+  margin-top: 10px;
   margin-right: 20px;
   text-align: center;
   float: left;
 }
 
 .hl-right {
+  margin-top: 10px;
   margin-left: 20px;
   text-align: center;
   float: right;
@@ -155,13 +159,13 @@ footer {
   font-weight: bolder;
   font-size: 14px;
   margin: 0;
-  padding: 0.5rem 0.75rem;
+  padding: 0.25rem 0.75rem;
 }
 
 .hl-text-section {
   text-align: justify;
   line-height: 2;
-  margin: 0.75rem 0;
+  margin: 1rem 0;
 }
 
 .hl-link-work {
@@ -182,6 +186,23 @@ footer {
 :hover.hl-link-edu {
   text-decoration: none;
   color: #28abb9;
+}
+
+.hl-link-music {
+  color: #ffa62b;
+  font-weight: bold;
+}
+
+:hover.hl-link-music{
+  text-decoration: none;
+  color: #f8dc81;
+}
+
+.hl-video {
+  display: block;
+  width: 668px;
+  height: 400px;
+  margin: 2.5rem auto 0.5rem;
 }
 
 .main-page {
@@ -211,11 +232,6 @@ footer {
 .slide-onside {
   width: 600px;
   height: 250px;
-  opacity: .5;
-}
-
-:hover.slide-onside {
-  opacity: 1;
 }
 
 .text-container {
@@ -239,6 +255,7 @@ footer {
 
 .work-img1-width {
   width: 300px;
+  margin-bottom: 1.5rem;
 }
 
 .work-img2 {
@@ -248,6 +265,7 @@ footer {
 
 .work-img2-width {
   width: 457px;
+  margin-bottom: 1.5rem;
 }
 
 .work-img3 {
@@ -257,6 +275,21 @@ footer {
 
 .work-img3-width {
   width: 415px;
+  margin-bottom: 1.5rem;
+}
+
+.music-img1 {
+  height: 446px;
+  width: 672px;
+}
+
+.music-img1-width {
+  width: 672px;
+  margin-bottom: 1.5rem;
+}
+
+.no-margin-bottom {
+  margin-bottom: 0px;
 }
 
 /* MEDIA QUERIES */
@@ -328,19 +361,36 @@ footer {
   }
 
   .edu-img3 {
-    width: 60%;
-    height: 20%;
+    width: 70%;
+    height: 40%;
   }
 
   .work-img1-width, .work-img2-width, .work-img3-width,
   .edu-img1-width, .edu-img2-width, .edu-img3-width {
     margin: 1.5rem auto;
     width: 100%;
-    height: 30%;
   }
 
   .hl-title {
     text-align: center;
+  }
+
+}
+
+@media (max-width: 850px) {
+
+  .music-img1 {
+    width: 100%;
+    height: 30%;
+  }
+
+  .music-img1-width {
+    margin: 1.5rem auto;
+    width: 100%;
+  }
+
+  .hl-video {
+    width: 100%;
   }
 
 }

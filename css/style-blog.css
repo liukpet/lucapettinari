@@ -1,0 +1,46 @@
+#brand {
+  font-family: 'Stalinist One';
+  margin: 0;
+}
+
+.bg-indigo {
+  background-color: #154c79;
+}
+
+.bg-light-indigo{
+  background-color: #8AA5BC
+}
+
+.blog-about{
+  color: white;
+  font-size: 1.5rem;
+}
+
+.blog-about:hover{
+  text-decoration: none;
+}
+
+.blog-title {
+  padding: 5rem 10rem;
+  font-family: 'Roboto Slab';
+}
+
+.subtitle {
+  margin-top: 1rem;
+  padding: .5rem;
+  font-size: 1.5rem;
+}
+
+.title{
+  font-size: 3.8rem;
+}
+
+.blog-footer{
+  padding: 2rem 10rem;
+  font-family: 'Roboto Slab';
+}
+
+.logo-pic{
+  width: 325px;
+  height: 35px;
+}

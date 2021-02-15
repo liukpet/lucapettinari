@@ -13,14 +13,16 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
 
   <!--FONTS -->
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Slab&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Lexend+Zetta&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Stalinist+One&display=swap" rel="stylesheet">
 
   <!-- FONT AWESOME -->
   <script src="https://kit.fontawesome.com/c854038af6.js" crossorigin="anonymous"></script>
 
   <!-- CSS. Note: always include this AFTER the bootstrap css file in order to override properties of bootstrap components -->
-  <link rel="stylesheet" href="../css/styles.css">
+  <link rel="stylesheet" href="../css/style-blog.css">
 
   <title>lucapettinari</title>
 </head>
@@ -29,81 +31,31 @@
 
   <!-- Header -->
   <header>
-
-    <!-- navigation bar on top, made fixed as the webpage is scrolled down -->
-    <!-- Note: button's data target address the id property of the div that is going to be dropped down onclick! -->
-    <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
-      <a class="navbar-brand" href="../en/index.html" id="brand">Luca Pettinari</a>
-    </nav>
+    <div class="row text-light bg-indigo fixed-top blog-title">
+      <div class="col-6">
+        <h1 class="title">BACKPROPAGATED</h1>
+        <h4 class="subtitle"> Share your knowledge.</h4>
+      </div>
+    </div>
 
   </header>
 
   <!-- Main -->
   <main style="height: 800px">
-
   </main>
 
   <!-- Footer -->
-  <footer class="page-footer font-small text-light bg-dark pt-4">
+  <footer>
 
     <!-- Footer Contacts -->
-    <div class="container text-center text-md-left">
-      <div class="row text-center text-md-left mt-3 pb-3">
-
-        <div class="col-md-4 col-lg-4 col-xl-3 ml-auto mt-3 pl-1 pr-1">
-          <h6 class="text-uppercase mb-4 font-weight-bold">Contacts</h6>
-          <p><i class="fas fa-home mr-3"></i>Civitanova Marche, Italy</p>
-          <p><i class="fas fa-envelope mr-3"></i><a class="footer-link" href="mailto:lalb.pettinari@gmail.com"> lalb.pettinari@gmail.com</a></p>
-          <p><i class="fas fa-phone mr-3"></i> + 39 338 334 9649</p>
+      <div class="row text-light bg-indigo fixed-bottom blog-footer">
+        <div class="col-12 col-md-6 text-center text-md-left">
+          <img class="logo-pic" src="logo-small.png" alt="">
         </div>
-
-      </div>
-
-      <hr>
-
-      <div class="row d-flex align-items-center">
-        <div class="col-md-7 col-lg-8">
-
-          <p class="text-center text-md-left">© 2020 Copyright:
-            <strong>Luca Pettinari</strong>
-          </p>
-
-        </div>
-        <div class="col-md-5 col-lg-4 mr-lg-0">
-
-          <!-- Social buttons -->
-          <div class="text-center text-md-right">
-            <ul class="list-unstyled list-inline">
-              <li class="list-inline-item">
-                <!-- Resume -->
-                <a class="btn-floating btn-sm rgba-white-slight mx-2" href="../docs/CV_Pettinari(ENG).pdf" target="blank">
-                  <img class="footer-icon" src="../icons/cv.png">
-                </a>
-              </li>
-              <li class="list-inline-item">
-                <!-- Linkedin -->
-                <a class="btn-floating btn-sm rgba-white-slight mx-2" href="https://www.linkedin.com/in/luca-alberto-pettinari-2b7a80162/" target="blank">
-                  <i class="fab fa-linkedin-in"></i>
-                </a>
-              </li>
-              <li class="list-inline-item">
-                <!-- YouTube -->
-                <a class="btn-floating btn-sm rgba-white-slight mx-2" href="https://www.youtube.com/channel/UCOYSTE5pk0LJB2hYrkW1kmw" target="blank">
-                  <i class="fab fa-youtube"></i>
-                </a>
-              </li>
-              <li class="list-inline-item">
-                <!-- Instagram -->
-                <a class="btn-floating btn-sm rgba-white-slight mx-2" href="https://www.instagram.com/pettinariluca/" target="blank">
-                  <i class="fab fa-instagram"></i>
-                </a>
-              </li>
-            </ul>
-          </div>
+        <div class="col-12 col-md-6 text-center text-md-right">
+          <a class="blog-about" href="../en/index.html">About</a>
         </div>
       </div>
-    </div>
-
   </footer>
 
   <script src="../js/index.js"></script>
