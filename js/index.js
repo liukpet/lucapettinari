@@ -1,6 +1,10 @@
 $('document').ready(function (){
   console.log("JS ready!");
 
+  $.getJSON('https://json.geoiplookup.io/api?callback=?', function(data) {
+  console.log(JSON.stringify(data, null, 2));
+  });
+
   $("#it-flag").click(function(){
     var new_url = swapLanguages("it");
     window.open(new_url, "_self");
