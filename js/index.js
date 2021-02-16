@@ -1,7 +1,7 @@
 $('document').ready(function (){
   console.log("JS ready!");
 
-  $.getJSON('https://json.geoiplookup.io/api?callback=?', function(data) {
+  $.getJSON('https://json.geoiplookup.io', function(data) {
   console.log(JSON.stringify(data, null, 2));
   });
 
